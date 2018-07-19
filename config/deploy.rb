@@ -1,6 +1,9 @@
 # Project configuration
 # =====================
 
+# The path to local directory temporary directory which is read and writeable.
+ set :local_tmp_dir, "tmp"
+
 # Set the name of the bedrock project folder
 set :bedrock_folder, "example.com"
 
