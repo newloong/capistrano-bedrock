@@ -1,5 +1,7 @@
 set :stage, :production
 
+set :deploy_to, -> { "/home/user/public_html/#{fetch(:application)}" }
+
 # Url of the WordPress root installation on the remote server (used by search-replace command)
 set :wpcli_remote_url, -> { "//#{fetch(:production_domain)}" }
 
